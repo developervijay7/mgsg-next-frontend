@@ -16,11 +16,11 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <ul className="hidden md:flex space-x-6 font-medium">
-                    <li><Link href="/public">Home</Link></li>
+                    <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
                     <li><Link href="/services">Services</Link></li>
                     <li><Link href="/projects">Projects</Link></li>
-                    <li><Link href="/contact/Page">Contact</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
 
                 {/* Dark Mode Toggle (desktop) */}
@@ -38,7 +38,7 @@ export default function Header() {
             {/* Mobile Dropdown Menu */}
             {menuOpen && (
                 <div className="md:hidden bg-white dark:bg-gray-800 px-4 py-3 space-y-2 border-t dark:border-gray-700">
-                    {["Home","About","Services","Projects","Page"].map((item, i) => (
+                    {["Home","About","Services","Projects","Contact"].map((item, i) => (
                         <Link
                             key={i}
                             href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
