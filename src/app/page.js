@@ -267,7 +267,7 @@ export default function Home() {
                         What Our <span className="text-blue-600 dark:text-blue-400">Clients Say</span>
                     </h2>
                     <p className="text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-                        Our clients' satisfaction is our top priority. Here’s what they have to
+                        Our clients satisfaction is our top priority. Here’s what they have to
                         say about working with MGSG Construction.
                     </p>
 
