@@ -24,8 +24,8 @@ export default function Page() {
                             MGSG Construction Bharat Pvt Ltd<br />
                             Gomti Nagar Extension, Lucknow, Uttar Pradesh
                         </p>
-                        <p className="text-gray-700 dark:text-gray-300 mb-2">📞 +91 98765 43210</p>
-                        <p className="text-gray-700 dark:text-gray-300 mb-6">✉️ info@mgsgconstruction.in</p>
+                        <p className="text-gray-700 dark:text-gray-300 mb-2">📞 +91 8475888877</p>
+                        <p className="text-gray-700 dark:text-gray-300 mb-6">✉️ hello@mgsgbharat.com</p>
                         <p className="text-gray-700 dark:text-gray-300">⏰ Mon – Sat: 9:00 AM – 6:00 PM</p>
                     </div>
 

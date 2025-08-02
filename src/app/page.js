@@ -231,8 +231,8 @@ export default function Home() {
                     {/* ✅ Team Grid */}
                     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                         {[
-                            { name: "Arun Mehta", role: "CEO & Founder", img: "https://via.placeholder.com/300x300?text=CEO" },
-                            { name: "Priya Sharma", role: "Head Architect", img: "https://via.placeholder.com/300x300?text=Architect" },
+                            { name: "Mohit Goswami", role: "CEO & Founder", img: "https://via.placeholder.com/300x300?text=CEO" },
+                            { name: "Sonam Goswami", role: "Head Architect", img: "https://via.placeholder.com/300x300?text=Architect" },
                             { name: "Ravi Patel", role: "Project Manager", img: "https://via.placeholder.com/300x300?text=Manager" },
                             { name: "Sneha Kapoor", role: "Civil Engineer", img: "https://via.placeholder.com/300x300?text=Engineer" },
                         ].map((member, i) => (
