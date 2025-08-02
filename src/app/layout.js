@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header";
-import "./globals.css"; // you can still keep this for custom styles if needed
+import "./globals.css";
+import Script from "next/script"; // you can still keep this for custom styles if needed
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -15,14 +16,22 @@ export default function RootLayout({ children }) {
         <html lang="en" className="dark">
         <head>
             {/* ✅ TailwindCSS Play CDN */}
-            <script src="https://cdn.tailwindcss.com"></script>
-            {/* Optional: Custom Dark Mode Config */}
-            <script dangerouslySetInnerHTML={{__html: `
-          tailwind.config = {
-            darkMode: 'class',
-          }
-        `}} />
+            <Script
+                src="https://cdn.tailwindcss.com"
+                strategy="beforeInteractive"
+            />
+
+            {/* ✅ Dark Mode Config */}
+            <Script id="tailwind-config" strategy="beforeInteractive">
+                {`
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    `}
+            </Script>
         </head>
+
+
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100`}>
         <Header />
         <main className="container mx-auto p-6">{children}</main>
