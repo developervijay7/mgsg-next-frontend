@@ -165,9 +165,9 @@ export default function Home() {
                     {/* ✅ Projects Grid */}
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {[
-                            { title: "Skyline Residency", img: "https://via.placeholder.com/600x400?text=Project+1" },
-                            { title: "Metro Business Hub", img: "https://via.placeholder.com/600x400?text=Project+2" },
-                            { title: "Industrial Park", img: "https://via.placeholder.com/600x400?text=Project+3" },
+                            { title: "Skyline Residency", img: "/images/project-1.png" },
+                            { title: "Metro Business Hub", img: "/images/project-2.png" },
+                            { title: "Industrial Park", img: "/images/project-3.png" },
                         ].map((project, index) => (
                             <div key={index} className="relative group overflow-hidden rounded-xl shadow-lg">
                                 {/* Project Image */}
