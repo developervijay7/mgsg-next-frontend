@@ -1,3 +1,7 @@
+import WhyChooseUs from "@/components/WhyChooseUs";
+import TeamSlider from "@/components/TeamSlider";
+import TestimonialsSlider from "@/components/TestimonialSlider";
+
 export default function Home() {
     return (
         <>
@@ -5,7 +9,7 @@ export default function Home() {
                 {/* ✅ Background Image */}
                 <div className="absolute inset-0">
                     <img
-                        src="https://via.placeholder.com/1600x800?text=MGSG+Construction+Site"
+                        src="/images/hero-bg.jpg"
                         alt="Construction Background"
                         className="w-full h-full object-cover opacity-70"
                     />
@@ -184,134 +188,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="bg-gray-50 dark:bg-gray-800 py-16">
-                <div className="container mx-auto px-6 text-center">
-
-                    {/* ✅ Section Heading */}
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-                        Why <span className="text-blue-600 dark:text-blue-400">Choose Us</span>
-                    </h2>
-                    <p className="text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-                        At MGSG Construction, we pride ourselves on delivering quality,
-                        innovation, and customer satisfaction in every project we undertake.
-                    </p>
-
-                    {/* ✅ Stats Grid */}
-                    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                        {[
-                            { stat: "10+", label: "Years Experience", icon: "https://via.placeholder.com/60?text=⏳" },
-                            { stat: "150+", label: "Projects Completed", icon: "https://via.placeholder.com/60?text=🏗️" },
-                            { stat: "100+", label: "Happy Clients", icon: "https://via.placeholder.com/60?text=😊" },
-                            { stat: "50+", label: "Expert Engineers", icon: "https://via.placeholder.com/60?text=👷" },
-                        ].map((item, index) => (
-                            <div
-                                key={index}
-                                className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow hover:shadow-lg transition"
-                            >
-                                <img src={item.icon} alt={item.label} className="mx-auto mb-3 w-14 h-14" />
-                                <h3 className="text-3xl font-bold text-blue-600 dark:text-blue-400">{item.stat}</h3>
-                                <p className="mt-2 text-gray-700 dark:text-gray-300">{item.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-            <section className="bg-white dark:bg-gray-900 py-16">
-                <div className="container mx-auto px-6 text-center">
-
-                    {/* ✅ Section Heading */}
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-                        Meet Our <span className="text-blue-600 dark:text-blue-400">Team</span>
-                    </h2>
-                    <p className="text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-                        Our experienced team of engineers, architects, and project managers
-                        work together to deliver exceptional results on every project.
-                    </p>
-
-                    {/* ✅ Team Grid */}
-                    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                        {[
-                            { name: "Mohit Goswami", role: "CEO & Founder", img: "https://via.placeholder.com/300x300?text=CEO" },
-                            { name: "Sonam Goswami", role: "Head Architect", img: "https://via.placeholder.com/300x300?text=Architect" },
-                            { name: "Ravi Patel", role: "Project Manager", img: "https://via.placeholder.com/300x300?text=Manager" },
-                            { name: "Sneha Kapoor", role: "Civil Engineer", img: "https://via.placeholder.com/300x300?text=Engineer" },
-                        ].map((member, i) => (
-                            <div
-                                key={i}
-                                className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition"
-                            >
-                                <img
-                                    src={member.img}
-                                    alt={member.name}
-                                    className="w-32 h-32 mx-auto rounded-full mb-4 object-cover shadow-md"
-                                />
-                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{member.name}</h3>
-                                <p className="text-blue-600 dark:text-blue-400 font-medium">{member.role}</p>
-
-                                {/* ✅ Social Icons */}
-                                <div className="flex justify-center gap-3 mt-3">
-                                    <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">🌐</a>
-                                    <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">💼</a>
-                                    <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">📧</a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-            <section className="bg-gray-50 dark:bg-gray-800 py-16">
-                <div className="container mx-auto px-6 text-center">
-
-                    {/* ✅ Section Heading */}
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-                        What Our <span className="text-blue-600 dark:text-blue-400">Clients Say</span>
-                    </h2>
-                    <p className="text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-                        Our clients satisfaction is our top priority. Here’s what they have to
-                        say about working with MGSG Construction.
-                    </p>
-
-                    {/* ✅ Testimonials Grid */}
-                    <div className="grid gap-8 md:grid-cols-3">
-                        {[
-                            {
-                                name: "Rohit Verma",
-                                role: "Real Estate Developer",
-                                feedback: "MGSG Construction delivered our project ahead of schedule with outstanding quality. Truly a reliable partner!",
-                                img: "https://via.placeholder.com/100?text=R",
-                            },
-                            {
-                                name: "Ananya Singh",
-                                role: "Business Owner",
-                                feedback: "Professional, innovative, and efficient. Their team exceeded our expectations in every way.",
-                                img: "https://via.placeholder.com/100?text=A",
-                            },
-                            {
-                                name: "Vikram Desai",
-                                role: "Industrial Client",
-                                feedback: "Excellent service and attention to detail. Highly recommended for any industrial project.",
-                                img: "https://via.placeholder.com/100?text=V",
-                            },
-                        ].map((client, i) => (
-                            <div
-                                key={i}
-                                className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center"
-                            >
-                                <img
-                                    src={client.img}
-                                    alt={client.name}
-                                    className="w-20 h-20 rounded-full object-cover shadow mb-4"
-                                />
-                                <p className="text-gray-700 dark:text-gray-300 italic mb-3">
-                                    “{client.feedback}”
-                                </p>
-                                <h4 className="font-semibold text-gray-900 dark:text-white">{client.name}</h4>
-                                <span className="text-blue-600 dark:text-blue-400 text-sm">{client.role}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <WhyChooseUs />
+            <TeamSlider />
+           <TestimonialsSlider />
             <section className="relative bg-gray-900 text-white">
                 {/* ✅ Background Image */}
                 <div className="absolute inset-0">
