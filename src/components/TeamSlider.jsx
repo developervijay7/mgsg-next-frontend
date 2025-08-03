@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const teamMembers = [
-    { name: "Mohit Goswami", role: "CEO & Founder", img: "https://via.placeholder.com/300x300?text=CEO" },
+    { name: "Mohit Goswami", role: "CEO & Founder", img: "/images/mohit.jpg" },
     { name: "Sonam Goswami", role: "Head Architect", img: "https://via.placeholder.com/300x300?text=Architect" },
     { name: "Ravi Patel", role: "Project Manager", img: "https://via.placeholder.com/300x300?text=Manager" },
     { name: "Sneha Kapoor", role: "Civil Engineer", img: "https://via.placeholder.com/300x300?text=Engineer" },
