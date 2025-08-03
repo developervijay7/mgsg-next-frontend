@@ -207,7 +207,7 @@ export default function Home() {
                 {/* ✅ Background Image */}
                 <div className="absolute inset-0">
                     <img
-                        src="https://via.placeholder.com/1600x500?text=Let’s+Build+Together"
+                        src="/images/another.png"
                         alt="Page Banner"
                         className="w-full h-full object-cover opacity-60"
                     />
@@ -223,9 +223,9 @@ export default function Home() {
                         Let’s collaborate to bring your vision to life with MGSG Construction’s expertise and commitment.
                     </p>
                     <a
-                        href="/contact/Page"
+                        href="/contact"
                         className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg transition">
-                        Page Us Today
+                        Contact Us Today
                     </a>
                 </div>
             </section>
