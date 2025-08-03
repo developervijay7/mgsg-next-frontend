@@ -100,31 +100,43 @@ export default function Home() {
                             {
                                 title: "Residential Projects",
                                 desc: "Building modern and sustainable homes with unmatched quality.",
-                                icon: "https://via.placeholder.com/100?text=🏠",
+                                icon: "/images/service-1.jpg",
                             },
                             {
                                 title: "Commercial Infrastructure",
                                 desc: "Developing high-end commercial spaces to boost business growth.",
-                                icon: "https://via.placeholder.com/100?text=🏢",
+                                icon: "/images/service-2.jpg",
                             },
                             {
                                 title: "Industrial Solutions",
                                 desc: "Providing large-scale industrial construction with efficiency and safety.",
-                                icon: "https://via.placeholder.com/100?text=🏭",
+                                icon: "/images/service-3.jpg",
                             },
                         ].map((service, index) => (
                             <div
                                 key={index}
-                                className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition hover:-translate-y-1"
+                                className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition hover:-translate-y-1 flex flex-col items-center"
                             >
-                                <img src={service.icon} alt={service.title} className="mx-auto mb-4 w-16 h-16" />
+                                {/* ✅ Large Responsive Image */}
+                                <div className="w-full max-w-[300px] aspect-square overflow-hidden rounded-lg mb-4">
+                                    <img
+                                        src={service.icon}
+                                        alt={service.title}
+                                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                    />
+                                </div>
+
+                                {/* ✅ Title */}
                                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
                                     {service.title}
                                 </h3>
+
+                                {/* ✅ Description */}
                                 <p className="text-gray-600 dark:text-gray-300">
                                     {service.desc}
                                 </p>
                             </div>
+
                         ))}
                     </div>
 
