@@ -51,10 +51,10 @@ export default function Header() {
 
                     {/* Dark Mode Toggle (mobile) */}
                     <button
-                        className="w-full text-left p-2 rounded bg-gray-200 dark:bg-gray-700 mt-2"
+                        className="p-2 ml-4 rounded bg-gray-200 dark:bg-gray-700"
                         onClick={() => setDarkMode(!darkMode) || document.documentElement.classList.toggle("dark")}
                     >
-                        Toggle Dark Mode
+                        🌓
                     </button>
                 </div>
             )}
