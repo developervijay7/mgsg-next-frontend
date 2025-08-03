@@ -44,16 +44,39 @@ export default function WhyChooseUs() {
                     {statsData.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow hover:shadow-lg transition"
+                            className="group relative bg-white/70 dark:bg-gray-800/60 backdrop-blur-lg p-8 rounded-2xl
+                 border border-gray-200/50 dark:border-gray-700/30 shadow-md
+                 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-out"
                         >
-                            <img src={item.icon} alt={item.label} className="mx-auto mb-3 w-14 h-14" />
-                            <h3 className="text-3xl font-bold text-blue-600 dark:text-blue-400">
-                                {visible ? <Counter end={item.stat} suffix={item.suffix} /> : `0${item.suffix}`}
+                            {/* ✅ Decorative Gradient Glow */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 to-transparent dark:from-blue-500/10 dark:to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                            {/* ✅ Icon with Hover Animation */}
+                            <div className="relative z-10 mb-4 flex justify-center">
+                                <div className="p-3 bg-blue-50 dark:bg-gray-700 rounded-full shadow-inner
+                        group-hover:scale-110 transition-transform duration-500">
+                                    <img src={item.icon} alt={item.label} className="w-14 h-14" />
+                                </div>
+                            </div>
+
+                            {/* ✅ Stat Number */}
+                            <h3 className="relative z-10 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-1">
+        <span className="bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent drop-shadow">
+          {visible ? <Counter end={item.stat} suffix={item.suffix} /> : `0${item.suffix}`}
+        </span>
                             </h3>
-                            <p className="mt-2 text-gray-700 dark:text-gray-300">{item.label}</p>
+
+                            {/* ✅ Label */}
+                            <p className="relative z-10 text-gray-600 dark:text-gray-300 text-lg font-medium mt-2">
+                                {item.label}
+                            </p>
+
+                            {/* ✅ Subtle Glow on Hover */}
+                            <div className="absolute -bottom-2 inset-x-4 h-1 bg-blue-400/30 rounded-full blur-md opacity-0 group-hover:opacity-100 transition duration-500" />
                         </div>
                     ))}
                 </div>
+
             </div>
         </section>
     );
