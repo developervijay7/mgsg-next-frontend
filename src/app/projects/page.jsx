@@ -63,7 +63,7 @@ export default function Projects() {
                             <li>✅ Integrated green building technologies</li>
                             <li>✅ Completed ahead of timeline</li>
                         </ul>
-                        <a href="/contact/Page" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow transition">
+                        <a href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow transition">
                             Start Your Project
                         </a>
                     </div>
@@ -87,7 +87,7 @@ export default function Projects() {
                         Partner with MGSG Construction for innovative, sustainable,
                         and high-quality construction solutions.
                     </p>
-                    <a href="/contact/Page" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg shadow-lg transition">
+                    <a href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg shadow-lg transition">
                         Let's Work Together
                     </a>
                 </div>

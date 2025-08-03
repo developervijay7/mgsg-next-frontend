@@ -186,7 +186,7 @@ export default function About() {
                         infrastructure projects that make a difference.
                     </p>
                     <a
-                        href="/contact/Page"
+                        href="/contact"
                         className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg transition">
                         Contact Us Now
                     </a>

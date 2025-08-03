@@ -76,7 +76,7 @@ export default function Services() {
                         Get in touch with us to discuss your upcoming project. Our experts
                         are ready to assist you.
                     </p>
-                    <a href="/contact/Page" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg shadow-lg transition">
+                    <a href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg shadow-lg transition">
                         Request a Quote
                     </a>
                 </div>
