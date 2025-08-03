@@ -46,7 +46,7 @@ export default function Home() {
                     {/* ✅ Left: Image */}
                     <div className="md:w-1/2">
                         <img
-                            src="https://via.placeholder.com/600x400?text=About+MGSG+Construction"
+                            src="/images/about-mgsg.jpg"
                             alt="About MGSG Construction"
                             className="rounded-xl shadow-lg"
                         />
