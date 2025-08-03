@@ -1,6 +1,7 @@
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TeamSlider from "@/components/TeamSlider";
 import TestimonialsSlider from "@/components/TestimonialSlider";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -27,16 +28,16 @@ export default function Home() {
 
                     {/* ✅ Call to Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <a
+                        <Link
                             href="/projects"
                             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
                             View Our Projects
-                        </a>
-                        <a
-                            href="/contact/Page"
+                        </Link>
+                        <Link
+                            href="/contact"
                             className="bg-white text-gray-900 hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold shadow-lg transition dark:bg-gray-100 dark:hover:bg-gray-300">
                             Get in Touch
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -72,11 +73,11 @@ export default function Home() {
                         </ul>
 
                         {/* ✅ Call to Action */}
-                        <a
+                        <Link
                             href="/about"
                             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
                             Learn More About Us
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -142,11 +143,11 @@ export default function Home() {
 
                     {/* ✅ CTA */}
                     <div className="mt-10">
-                        <a
+                        <Link
                             href="/services"
                             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
                             Explore All Services
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -180,11 +181,11 @@ export default function Home() {
                                 {/* Overlay */}
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-center items-center">
                                     <h3 className="text-white text-xl font-semibold mb-3">{project.title}</h3>
-                                    <a
+                                    <Link
                                         href="/projects"
                                         className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold shadow transition">
                                         View Project
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
@@ -192,11 +193,11 @@ export default function Home() {
 
                     {/* ✅ CTA */}
                     <div className="mt-10">
-                        <a
+                        <Link
                             href="/projects"
                             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition">
                             View All Projects
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -222,11 +223,11 @@ export default function Home() {
                     <p className="text-lg md:text-xl mb-6 text-gray-200">
                         Let’s collaborate to bring your vision to life with MGSG Construction’s expertise and commitment.
                     </p>
-                    <a
+                    <Link
                         href="/contact"
                         className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg transition">
                         Contact Us Today
-                    </a>
+                    </Link>
                 </div>
             </section>
 
