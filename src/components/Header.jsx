@@ -10,9 +10,11 @@ export default function Header() {
         <header className="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo / Brand */}
-                <h1 className="text-2xl font-bold text-blue-700 dark:text-blue-400">
-                    MGSG Construction
-                </h1>
+                <Link href="/">
+                    <h1 className="text-2xl font-bold text-blue-700 dark:text-blue-400">
+                        MGSG Construction
+                    </h1>
+                </Link>
 
                 {/* Desktop Navigation */}
                 <ul className="hidden md:flex space-x-6 font-medium">
