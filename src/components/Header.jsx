@@ -11,10 +11,13 @@ export default function Header() {
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo / Brand */}
                 <Link href="/">
-                    <h1 className="text-2xl font-bold text-blue-700 dark:text-blue-400">
-                        MGSG Construction
-                    </h1>
-                </Link>
+  <img
+    src="/logo.png"
+    alt="MGSG Construction Logo"
+    style={{ height: '100px', width: 'auto' }}
+  />
+</Link>
+
 
                 {/* Desktop Navigation */}
                 <ul className="hidden md:flex space-x-6 font-medium">
